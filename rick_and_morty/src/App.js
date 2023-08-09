@@ -1,10 +1,10 @@
 import './App.css';
-import Cards from './components/Cards.jsx';
-import SearchBar from './components/SearchBar';
+import SearchB from './components/SearchBar';
 import { useState } from 'react';
 import axios from 'axios';
-
-
+import {Routes,Route} from "react-router-dom"
+import Home from './views/home';
+import About from './views/about';
 
 function App() {
    const [characters, setCharacters] =useState([]);
@@ -28,10 +28,14 @@ function App() {
       setCharacters(characters.filter(char => char.id !== id))   
    }
 return (
-      <div className='App'>
-         <SearchBar onSearch={onSearch}/>
-         <Cards characters={characters}  onClose={onClose}/>
-         </div>
+    <div className='App'>
+    <SearchB onSearch={onSearch}/>
+   <Routes>
+   <Route path="/about" element={<About/>}/>
+   <Route path="/home" element={ <Home characters={characters} onClose={onClose} />}/>
+   </Routes> 
+   
+   </div>
    );
 };
 

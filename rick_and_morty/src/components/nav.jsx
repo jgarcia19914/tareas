@@ -1,11 +1,10 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 
-
-export default function SearchB() {
+export default function SearchB({onSearch}) {
     return(
     <div>
-    <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+     <SearchBar onSearch={onSearch} />
     </div>
     )
 }
