@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.emailimagen{
+  height: 125px;
+}
+.formEamil{
+  align-items:end;
+  justify-content: right;
+
+}
