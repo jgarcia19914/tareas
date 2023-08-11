@@ -5,6 +5,7 @@ import axios from 'axios';
 import {Routes,Route} from "react-router-dom"
 import Home from './views/home';
 import About from './views/about';
+import Detail from './components/Detail';
 
 function App() {
    const [characters, setCharacters] =useState([]);
@@ -32,6 +33,7 @@ return (
     <SearchB onSearch={onSearch}/>
    <Routes>
    <Route path="/about" element={<About/>}/>
+   <Route path="//detail/:id" element={<Detail/>}/>
    <Route path="/home" element={ <Home characters={characters} onClose={onClose} />}/>
    </Routes> 
    
