@@ -19,9 +19,10 @@ const Form = ()=>{
         <img className='emailimagen' src={email2} alt='email'/>
         <form className='formEamil'>
         <div>
-           <label htmlFor='email'>email</label>
+           <label htmlFor='email'>Email</label>
            <input type='text' name='email' value={form.email} onChange={handleChange}/>
-           <label>password</label>
+           <hr/>
+           <label>Password</label>
            <input type='text' name='password' value={form.password} onChange={handleChange}/>
            </div>
            <button type="submit">login</button>

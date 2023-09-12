@@ -4,7 +4,7 @@ export default function Home ({characters,onClose}){
    
    return(
         <div>
-        <h1>prueba</h1>
+        <h1>BIENVENIDO BUSCA EL ID DE UN PERSONAJE</h1>
         <Cards characters={characters}  onClose={onClose}/>
         </div>
     );

@@ -2,6 +2,7 @@ import React from "react"
 import {useParams} from "react-router-dom"
 import axios from "axios";
 import { useState,useEffect } from "react";
+import "../style/Detail.css"
 
 
 export default function SearchBar() {
@@ -19,13 +20,13 @@ export default function SearchBar() {
    return setCharDetail({});
 
    },[id])
-   return <div>
+   return <div className="Detail">
       <h2>{charDetail.name}</h2>
       <h2>{charDetail.status}</h2>
       <h2>{charDetail.species}</h2>
       <h2>{charDetail.gender}</h2>
       <h2>{charDetail.origin?.name}</h2>
-      <img src={charDetail.image} alt={charDetail.name}/>
+      <img  classname="tarjetadetail" src={charDetail.image} alt={charDetail.name}/>
       </div>;
    
 };

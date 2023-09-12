@@ -17,11 +17,12 @@ export default function SearchBar({onSearch}) {
       <Link to='/about'> 
       <button>About</button>
       </Link>
-      <Link to='/detail/:id'> 
-      <button>Detail</button>
+      <Link to='/Personajes'> 
+      <button>Personajes</button>
       </Link>
-           
-         <input className='InputSearch' type='search' onChange={handleChange} />
+      <Link to='/detail/:id'> 
+       </Link>
+       <input className='InputSearch' type='search' onChange={handleChange} />
          <Link to='/home'>        
          <button className='ButtonSearch' onClick={()=>{onSearch(id)}}>Agregar</button> 
          </Link>

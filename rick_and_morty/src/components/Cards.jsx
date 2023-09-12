@@ -4,6 +4,7 @@ export default function Cards({characters, onClose}) {
    return <div>
    {characters.map(function (charater){
       return(
+   
    <Card 
    key={charater.id}
    id={charater.id}

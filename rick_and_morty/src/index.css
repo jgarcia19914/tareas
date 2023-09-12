@@ -11,11 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.emailimagen{
-  height: 125px;
+.header{
+    font-weight: bold;
+    border-radius: 35px;
+   display: inline-block;
 }
 .formEamil{
-  align-items:end;
-  justify-content: right;
+  font-weight: bold;
+  border-radius: 35px;
+  display:inline-block;
+  font-weight: bold;
+  padding: 5px;
+  width: 255px;
+  
+}
 
+.emailimagen{
+  height: 125px;
+  width: 120px;
+  display:inline-block;
 }
