@@ -26,7 +26,6 @@ export default function SearchBar({onSearch}) {
          <Link to='/home'>        
          <button className='ButtonSearch' onClick={()=>{onSearch(id)}}>Agregar</button> 
          </Link>
-
          </div>
    ); 
 }

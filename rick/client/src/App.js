@@ -42,7 +42,7 @@ return (
    <Routes>
       <Route path="/about" element={<About/>}/>
       <Route path="/personajes" element={<Personasjes characters={characters}/>}/>
-      <Route path="//detail/:id" element={<Detail/>}/>
+      <Route path="/detail/:id" element={<Detail/>}/>
       <Route path="/home" element={ <Home characters={characters} onClose={onClose} />}/>
    </Routes> 
      
